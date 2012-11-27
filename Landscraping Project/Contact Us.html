@@ -70,9 +70,9 @@ loginname.value = ""
           <li><a href="Portfolio-Videos.html">Videos</a></li>
         </ul>
       </li>
-      <li><a href="#" class="MenuBarItemSubmenu">About Us</a>
+      <li><a href="About Us.html" class="MenuBarItemSubmenu">About Us</a>
         <ul>
-          <li><a href="About Us.html">About Us</a></li>
+          <li><a href="#">About Us</a></li>
           <li><a href="FAQ.html">F.A.Q.</a></li>
           <li><a href="Contact Us.html">Contact Us</a></li>
 </ul>
@@ -83,22 +83,56 @@ loginname.value = ""
 <p>&nbsp; </p>
 <p>&nbsp;</p>
 <h2>
-  Header 2</h2>
+  Contact Us</h2>
 <p>
-  Paragraph
-</p>
-<p>PLACEHOLDER TEXT &amp; CONTENT</p>
-<p>PLACEHOLDER TEXT &amp; CONTENT PLACEHOLDER TEXT &amp; CONTENT PLACEHOLDER TEXT &amp; CONTENT</p>
-<p>PLACEHOLDER TEXT &amp; CONTENT PLACEHOLDER TEXT &amp; CONTENT PLACEHOLDER TEXT &amp; CONTENT</p>
-<p>PLACEHOLDER TEXT &amp; CONTENT PLACEHOLDER TEXT &amp; CONTENT PLACEHOLDER TEXT &amp; CONTENT</p>
-<p>PLACEHOLDER TEXT &amp; CONTENT PLACEHOLDER TEXT &amp; CONTENT PLACEHOLDER TEXT &amp; CONTENT</p>
-<p>PLACEHOLDER TEXT &amp; CONTENT PLACEHOLDER TEXT &amp; CONTENT PLACEHOLDER TEXT &amp; CONTENT</p>
-<p>PLACEHOLDER TEXT &amp; CONTENT PLACEHOLDER TEXT &amp; CONTENT PLACEHOLDER TEXT &amp; CONTENT</p>
-<p>PLACEHOLDER TEXT &amp; CONTENT PLACEHOLDER TEXT &amp; CONTENT PLACEHOLDER TEXT &amp; CONTENT</p>
-<p>PLACEHOLDER TEXT &amp; CONTENT PLACEHOLDER TEXT &amp; CONTENT PLACEHOLDER TEXT &amp; CONTENT</p>
-<p>PLACEHOLDER TEXT &amp; CONTENT PLACEHOLDER TEXT &amp; CONTENT PLACEHOLDER TEXT &amp; CONTENT</p>
-<p>PLACEHOLDER TEXT &amp; CONTENT PLACEHOLDER TEXT &amp; CONTENT PLACEHOLDER TEXT &amp; CONTENT</p>
-<p>PLACEHOLDER TEXT &amp; CONTENT PLACEHOLDER TEXT &amp; CONTENT PLACEHOLDER TEXT &amp; CONTENT</p>
+  We are located right on campus at Oakland University!</p>
+<table width="200" border="0">
+  <tr>
+    <td><!DOCTYPE html>
+<html>
+<head>
+<script
+src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false">
+</script>
+<script>
+function initialize()
+{
+var mapOpt = {
+  center:new google.maps.LatLng(42.6758658,-83.2177129),
+  zoom:15,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+var map=new google.maps.Map(document.getElementById("googleMap"),mapOpt);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+<body>
+<div id="googleMap" style="width:500px;height:380px;"></div>
+</body>
+</html></td>
+  </tr>
+</table>
+<h2>Send us an email</h2>
+<p>Expect a response within 1 business day.  Remember to<br /> check the FAQ section as your question may have been<br /> asked before!
+<table width="200" border="0">
+  <tr>
+    <td><html>
+<body>
+
+<form method='post' action='phpmailfrom.php'>
+  Email: <input name='email' type='text' /><br />
+  Subject: <input name='subject' type='text' /><br />
+  Message:<br />
+  <textarea name='message' rows='15' cols='40'>
+  </textarea><br />
+  <input type='submit' />
+  </form>
+</body>
+</html> </td>
+  </tr>
+</table>
+
+
 
 
 
