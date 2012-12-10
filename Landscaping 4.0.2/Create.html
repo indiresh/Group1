@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+<link href="Style Sheet.css" rel="stylesheet" type="text/css" />
+<script>
+function welcome()
+{
+displaybox.value = loginname.value
+loginname.value = ""
+
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+</script>
+</head>
+
+<body>
+<table width="401" height="284" border="0" align="center">
+  <tr>
+    <td> <img src="Assests/Logo.gif" width="395" height="235" alt="Logo" longdesc="Assests/Logo.gif" /></td>
+  </tr>
+</table>
+<table width="805" border="0" align="center">
+  <tr>
+    <td><h1>Welcome to J.N.S. Landscaping</h1>
+    <h2>Please Create an Account to Visit our site</h2></td>
+  </tr>
+</table>
+<p><form id='register' action='register.php' method='post'
+    accept-charset='UTF-8'>
+<fieldset >
+<legend>Register</legend>
+<p>
+  <label for='username' >UserName:</label>
+  <input type='text' name='username' id='username' maxlength="50" />
+  <label for='password' ><br />
+    Password:</label>
+  <input type='password' name='password' id='password' maxlength="50" />
+</p>
+<p>
+  <input type='submit' name='Submit' value='Submit' />
+</p>
+</fieldset>
+</form>
+</p>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>var frmvalidator  = new Validator("register");
+frmvalidator.EnableOnPageErrorDisplay();
+frmvalidator.EnableMsgsTogether();
+frmvalidator.addValidation("username","req","Please provide a username");
+frmvalidator.addValidation("password","req","Please provide a password");</p>
+</body>
+</html>
